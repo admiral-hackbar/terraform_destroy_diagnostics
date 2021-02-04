@@ -1,5 +1,5 @@
 # terraform_destroy_diagnostics
-Small python tool to diagnose the output from terraform destroy, when it doesn't work.
+Small python tool to diagnose the output from terraform destroy or apply, when it doesn't work.
 
 I ran into problems with terraform destroying things out of order on AWS. Some things wouldn't get destroyed, and threw unhelpful messages. It was hard to parse the terraform output to see what had begun destroying, but didn't complete, so this script parses that output and finds those objects.
 
